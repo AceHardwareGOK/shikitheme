@@ -1,0 +1,114 @@
+/*проценты франшиз*/
+.l-page { outline: 20px solid rgba(255, 255, 255, 0.3); margin-bottom: 20px; }
+body { background: url(/assets/background/footer_lodyas.png) repeat; }
+.p-profiles-franchise .b-badge:before,.p-profiles .c-franchises .b-badge:before {
+   display: block;
+}
+  .p-profiles-franchise .b-badge[data-progress="100"]:before, 
+  .p-profiles .c-franchises .b-badge[data-progress="100"]:before {
+  opacity: unset;
+}
+
+/*шапка профиля*/
+.p-profiles-show .profile-head:before {
+  content: '';
+  display: block;
+  height: 300px;
+  background: url("https://64.media.tumblr.com/3211b73c9b32b062261d164039e9fcf5/1c1af52e6a2b68f3-b9/s1280x1920/54dfc22c11b43f12d04168433f3032a5cbe1dbf4.png") no-repeat;
+  background-size: cover; 
+  margin: -15px;
+  margin-bottom: 5px;
+}
+
+/*анимация аватарки*/
+.p-profiles .profile-head .c-brief .avatar img, .p-profiles .profile-head .c-brief .avatar .profile-actions {
+    animation: fly 3s ease-in-out infinite;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(12px);
+    }
+}
+
+/*фон сайта*/
+body { 
+  background:url(https://i.imgur.com/WeYEkoe.png) fixed no-repeat       bottom #EEE3E4;
+  background-size: 100% auto;
+}
+
+/*подпись внизу*/
+.l-footer .links:before {
+  content: 'Пусть у каждого прочитавшего родится бабушка';
+  position: absolute;
+  left: 16px;
+}
+
+/*цвет верхней панели*/
+.l-top_menu-v2,.l-top_menu-v2 .menu-dropdown > span,.l-top_menu-v2 .submenu {
+  background:#006CDD  !important;
+}
+/*выпадающие меню*/
+.l-top_menu-v2 .submenu {
+  background:linear-gradient(#006CDD, #B67EF9) !important;
+  border:1px solid black;
+  border-top:none;
+  border-radius: 0 0 6px 6px;
+}
+
+/*цвет выпадающих меню при наведении*/
+.l-top_menu-v2 .submenu > a:hover,.l-top_menu-v2 .menu-dropdown> span a:hover, .l-top_menu-v2 .menu-icon:hover{
+  color: #000 !important;
+  transition: background 0.2s ease;
+  background-color: #fff !important;
+}
+
+/*строка поиска*/
+.l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .hotkey-marker{
+  background-color: #fff !important;
+  color:#006CDD !important;
+  border-radius: 5px;
+  border: 1px solid #006CDD;
+}
+
+/*анимация графиков активности*/
+.activity .graph.vertical .line .bar {
+  box-sizing: content-box;
+  transform: translateY(1px);
+  transform-origin: center bottom;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-name: activity;
+}
+.activity .graph.vertical .line .bar:hover {
+  animation-name: none;
+  transform: none;
+}
+.activity .graph.vertical .line:nth-of-type(6n+2) .bar {
+  animation-delay: -.25s;
+}
+.activity .graph.vertical .line:nth-of-type(6n+4) .bar {
+  animation-delay: -.5s;
+}
+.activity .graph.vertical .line:nth-of-type(6n+3) .bar {
+  animation-delay: -.75s;
+}
+.activity .graph.vertical .line:nth-of-type(6n+6) .bar {
+  animation-delay: -1s;
+}
+.activity .graph.vertical .line:nth-of-type(6n+5) .bar {
+  animation-delay: -1.25s;
+}
+@keyframes activity {
+  0%, 100% {
+    transform: translateY(1px);
+  }
+  50% {
+    transform: translateY(7px);
+  }
+}
+
