@@ -1,6 +1,6 @@
-:root { 
+:root {
   /*цвет верхней панели и т.д*/
-  --maincolor: green;
+  --maincolor: #D94086;
   /*цвет выпадающих меню*/
   --subcolor: linear-gradient(var(--maincolor), #AE4FCE);
   /*цвет рамки выпадающих меню*/
@@ -698,8 +698,14 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 4px;
 }
 /*округление аватарок*/
-.b-user.avatar img,.p-profiles .profile-head .c-brief .avatar img,.l-top_menu-v2 .menu-dropdown.profile>span img,.b-comment>.inner header img,.l-top_menu-v2 .icon-avatar img,.p-user_rates-index .l-menu .avatar img,.b-club .logo,.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img,.p-collections .b-topic>.inner header img,.p-topics .l-menu .clubs .entry img,.b-message > .inner header img,.b-dialog > .inner header img{
+.b-user.avatar img,.l-top_menu-v2 .menu-dropdown.profile>span img,.b-comment>.inner header img,.l-top_menu-v2 .icon-avatar img,.p-user_rates-index .l-menu .avatar img,.b-club .logo,.b-user.avatar img, .b-user.named_avatar img, .b-user.avatar_fixed_margin img,.p-collections .b-topic>.inner header img,.p-topics .l-menu .clubs .entry img,.b-message > .inner header img,.b-dialog > .inner header img{
     border-radius: 50%;
+}
+/*рамка вокруг аватарки*/
+.p-profiles .profile-head .c-brief .avatar img {
+    border-radius: 50%;
+    border: solid var(--fontcolor);
+    border-width: 5px;
 }
 .b-modal>.inner {
     border-radius: 8px;
@@ -1011,6 +1017,10 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 .b-code:before {
     background-color: #50575d;
 }
+/*цвет рамки поля ввода*/
+.ProseMirror-focused {
+    border-color: var(--fontcolor);
+}
 /*select*/
 select{
     border: 1px solid var(--fontcolor);
@@ -1270,6 +1280,9 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
 /*eng-ru в описании */
 .b-lang_trigger:before,.b-lang_trigger:after {
     content: '';
+}
+.b-lang_trigger {
+    background: var(--collectionshover) !important;
 }
 /*развернуть*/
 .b-lang_trigger,.b-height_shortener .expand span,.b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse, .b-edit_styles .new_style .style_css .editor-expand, .b-edit_styles .new_style .style_css .editor-collapse {
