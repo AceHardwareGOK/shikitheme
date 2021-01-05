@@ -1588,3 +1588,7 @@ h3 {
 .bar.simple .bar.s3:hover {
     background: var(--graph3hover);
 }
+/*палочка под графиками активности*/
+.bar.vertical {
+    border-bottom: 2px solid var(--fontcolor);
+}
