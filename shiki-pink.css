@@ -1,6 +1,6 @@
 :root {
   /*цвет верхней панели и т.д*/
-  --maincolor: #000;
+  --maincolor: #D94086;
   /*цвет выпадающих меню*/
   --subcolor: linear-gradient(var(--maincolor), #AE4FCE);
   /*цвет рамки выпадающих меню*/
