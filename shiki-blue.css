@@ -588,7 +588,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 .midheadline:not(.magenta):not(.orange):not(.blue):not(.red):not(.green):not(.yellow):not(.purple) > a{
     background: var(--collectionshover);
     border-left: 0px solid #e3f0fb;
-    color: var(--fontcolor);
+    color: var(--fontcolor) !important;
     border-radius: 7px;
     text-align:center;
 }
@@ -1546,9 +1546,5 @@ h3 {
 .b-user_rate-history .score-time .stars-container .score:after{
     display: block;
     letter-spacing: 4px;
-    color: var(--fontcolor);
-}
-/*fix*/
-.p-dashboards-show .v2 .headline.magenta a {
     color: var(--fontcolor);
 }
