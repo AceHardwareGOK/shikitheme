@@ -15,7 +15,7 @@
   --hoverfont: #B050CD;
   /*цвет ссылок при нажатии*/
   --activefont: #9BACDE;
-  /*цвет рамик в колекциях при наведении, фоны под текстом*/
+  /*цвет рамки в колекциях при наведении, фоны под текстом*/
   --collectionshover: #FFDDF7;
   /*fix*/
   --link-color: var(--fontcolor);
@@ -604,7 +604,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 .midheadline:not(.magenta):not(.orange):not(.blue):not(.red):not(.green):not(.yellow):not(.purple) > a{
     background: var(--collectionshover);
     border-left: 0px solid #e3f0fb;
-    color: var(--fontcolor);
+    color: var(--fontcolor) !important;
     border-radius: 7px;
     text-align:center;
 }
@@ -1600,8 +1600,4 @@ h3 {
 /*палочка под графиками активности*/
 .bar.vertical {
     border-bottom: 2px solid var(--fontcolor);
-}
-/*fix*/
-.p-dashboards-show .v2 .headline.magenta a {
-    color: var(--fontcolor);
 }
