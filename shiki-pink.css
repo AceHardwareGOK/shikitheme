@@ -624,9 +624,6 @@ div.history .b-block_list li .tooltip-inner a:active,
 .headline>a:before, .midheadline>a:before, .subheadline>a:before{
     color:inherit;
 }
-.headline > a:hover,.subheadline > a:hover,.midheadline > a:hover,.headline>a:hover:before, .midheadline>a:hover:before, .subheadline>a:hover:before {
-    color:#555A80 !important;
-}
 /*???*/
 .midheadline.magenta,.midheadline.red,.midheadline.green,.midheadline.yellow,.midheadline.blue,.midheadline.orange,.midheadline.purple {
     border-radius: 7px;
