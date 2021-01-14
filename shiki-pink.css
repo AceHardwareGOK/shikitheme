@@ -1566,6 +1566,7 @@ h3 {
     background: var(--collectionshover);
     border: 1px solid var(--fontcolor);
     padding: 5px 10px 8px;
+    border-radius: 7px;
 }
 /*цвет звёзд в истории на главной странице*/
 .b-user_rate-history .score-time .stars-container .score:after{
