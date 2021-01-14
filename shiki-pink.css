@@ -648,7 +648,6 @@ div.history .b-block_list li .tooltip-inner a:active,
 .p-db_entries-show .cc-related-authors > .c-column .subheadline:nth-child(2){
       text-align:left !important;
 }
-
 @media screen and (max-width: 767px){
   #user_rates_index .headline,#user_rates_index .midheadline,#user_rates_index .subheadline{
       text-align:left;}
@@ -711,7 +710,8 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 50%;
 }
 /*рамка вокруг аватарки*/
-.p-profiles .profile-head .c-brief .avatar img,.p-user_rates-index .l-menu .avatar img{
+.p-profiles .profile-head .c-brief .avatar img,
+.p-user_rates-index .l-menu .avatar img {
     border-radius: 50%;
     border: solid var(--fontcolor);
     border-width: 5px;
@@ -1494,8 +1494,6 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 .b-add_to_list .expanded-options .remove-trigger .text {
     color: #da3a3a;
 }
-
-
 .user_rates-minified .b-catalog_entry.planned .image-decor::before,
 .user_rates-minified .b-catalog_entry.watching .image-decor::before,
 .user_rates-minified .b-catalog_entry.completed .image-decor::before,
@@ -1524,7 +1522,6 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
     padding: 1px 7px !important;
     margin: 0 2px 3px 2px;
 }
-
 .b-news_wall-topic .status-line .comments,
 .b-news_wall-topic .status-line time{
     border-left: none;
@@ -1539,7 +1536,6 @@ h3 {
     line-height: 21px;
     border-bottom: 1px solid #eaeaea;
 }
-
 .copyright{
     color:#4D4F5E !important;
 }
