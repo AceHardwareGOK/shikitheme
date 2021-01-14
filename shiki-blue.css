@@ -695,7 +695,8 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 50%;
 }
 /*рамка вокруг аватарки*/
-.p-profiles .profile-head .c-brief .avatar img {
+.p-profiles .profile-head .c-brief .avatar img,
+.p-user_rates-index .l-menu .avatar img{
     border-radius: 50%;
     border: solid var(--fontcolor);
     border-width: 5px;
