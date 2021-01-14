@@ -760,7 +760,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 .l-top_menu-v2 .global-search, .l-top_menu-v2 .global-search .hotkey-marker{
     background-color: var(--backgenre) !important;
     color:var(--maincolor) !important;
-    border-radius: 5px;
+    border-radius: 5px; 
     border: 1px solid var(--maincolor);
 }
 /*цвет текста в поле поиска*/
