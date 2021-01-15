@@ -27,22 +27,23 @@
   --buttoncolor: #F0ADF0;
   /*цвет кнопок при наведении*/
   --buttonhover: #F672DF;
+  --graphmain: 217, 64, 134;
   /*цвет самого тёмного графика*/
-  --graph0: #D94086;
+  --graph0: rgb(var(--graphmain));
   /*цвет графика посветлее*/
-  --graph1: #F672DF;
+  --graph1: rgba(var(--graphmain),0.8);
   /*цвет ещё более светлого графика*/
-  --graph2: #edacd9;
+  --graph2: rgba(var(--graphmain),0.6);
   /*цвет самого светлого графика*/
-  --graph3: #FFDDF7;
+  --graph3: rgba(var(--graphmain),0.3);
   /*цвет самого тёмного графика при наведении*/
-  --graph0hover: #C35AB0;
+  --graph0hover: var(--graph3);
   /*цвет графика посветлее при наведении*/
-  --graph1hover: #BA86AA;
+  --graph1hover: var(--graph2);
   /*цвет ещё болле светлого графика при наведении*/
-  --graph2hover: #CCB0C5;
+  --graph2hover: var(--graph1);
   /*цвет самого светлого графика при наведении*/
-  --graph3hover: #CCB0C5;
+  --graph3hover: var(--graph0);
   /*цвет при наведении на кнопки вкладок*/
   --color-overlay-text-hovered: rgba(33, 33, 33, 0.04);
   /* Обложка профиля */
