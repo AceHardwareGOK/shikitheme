@@ -25,13 +25,19 @@
 Класс ```--anorva``` делает другой вид вкладок.
 
 P.S. Классы указываются так:
-```[div=u-tabs --ripple --centered --vertical to-process data-dynamic=tabs]```
+```scss
+[div=u-tabs --ripple --centered --vertical to-process data-dynamic=tabs]
+```
 (после ```u-tabs```, через пробел, без точек)
 
 Добавить иконку к кнопке или вкладке достаточно просто:
 
 Иконка в обычной кнопке:
-```[div=b-button data-icon=monetization_on]Текст кнопки[/div]```
+```scss
+[div=b-button data-icon=monetization_on]Текст кнопки[/div]
+```
 
 Иконка в кнопке переключения вкладок:
-```[div data-tab-switch data-icon=palette]Текст вкладки[/div]```
+```scss
+[div data-tab-switch data-icon=palette]Текст вкладки[/div]
+```
