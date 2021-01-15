@@ -43,6 +43,12 @@
   --graph2hover: #CCB0C5;
   /*цвет самого светлого графика при наведении*/
   --graph3hover: #CCB0C5;
+  /*цвет при наведении на кнопки вкладок*/
+  --color-overlay-text-hovered: rgba(33, 33, 33, 0.04);
+  /* Обложка профиля */
+  --user-cover: url(https://64.media.tumblr.com/3211b73c9b32b062261d164039e9fcf5/1c1af52e6a2b68f3-b9/s1280x1920/54dfc22c11b43f12d04168433f3032a5cbe1dbf4.png);
+  /* Фон сайта */
+  --user-background: url(https://i.imgur.com/bz26Puf.png);
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -71,13 +77,12 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
   .p-profiles .c-franchises .b-badge[data-progress="100"]:before {
   opacity: unset;
 }
-
 /*шапка профиля*/
 .p-profiles-show .profile-head:before {
   content: '';
   display: block;
   height: 300px;
-  background: url("https://64.media.tumblr.com/3211b73c9b32b062261d164039e9fcf5/1c1af52e6a2b68f3-b9/s1280x1920/54dfc22c11b43f12d04168433f3032a5cbe1dbf4.png") no-repeat;
+  background: var(--user-cover) no-repeat;
   background-size: cover; 
   margin: -15px;
   margin-bottom: 5px;
@@ -142,7 +147,7 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
 }
 /*фон сайта*/
 body { 
-  background:url(https://i.imgur.com/bz26Puf.png) fixed no-repeat       bottom #EEE3E4;
+  background: var(--user-background) fixed no-repeat       bottom #EEE3E4;
   background-size: 100% auto;
 }
 /* Цвет текста ссылки по умолчанию */
@@ -1609,3 +1614,169 @@ h3 {
 }
 /*фиксированный размер обложек*/
 @import url(https://css-club.web.app/css/fixed_cover.min.css);
+/*Вкладки*/
+[data-icon]::before{
+    display:block;
+    flex-shrink:0;
+    width:1em !important;
+    font-family:'Material Icons' !important;
+    font-size:24px !important;
+    font-style:normal;
+    font-weight:400 !important;
+    line-height:1 !important;
+    letter-spacing:normal;
+    text-transform:none;
+    word-wrap:normal;
+    white-space:nowrap;
+    direction:ltr;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+    font-feature-settings:'liga';overflow:hidden
+}
+[data-icon]::before{
+    content:attr(data-icon);
+    display:inline-block;
+    vertical-align:top;
+    flex-shrink:0;
+    margin-right:8px;
+    margin-left:-4px;
+    background-size:cover;
+     background-position:center;
+    overflow:hidden
+}
+@media (min-width: 960px){
+  .u-tabs.--vertical{
+    display:flex;
+    border:1px solid var(--buttoncolor);
+    border-radius:5px;
+  }
+  .u-tabs.--vertical>div:not([data-tab]){
+    flex-direction:column;
+    flex-shrink:0;
+    width:200px;
+    padding:8px 0;
+    border-right:1px solid var(--buttoncolor)
+  }
+  .u-tabs.--vertical [data-tab-switch]{
+    padding:8px 16px;
+    margin:0 !important;
+    border:0;
+    border-radius:0;
+    text-align:left
+  }
+  .u-tabs.--vertical [data-tab]{
+    flex-grow:1;
+    padding:18px 24px
+  }
+}@media (min-width: 960px){
+  .u-tabs.--vertical.--right>div:not([data-tab]){
+    order:1;
+    border-right:0;
+    border-left:1px solid var(--buttoncolor)
+  }
+}
+  .u-tabs>div:not([data-tab]){
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    overflow-y:auto
+}
+  .u-tabs [data-tab-switch]{
+    display:block;
+    flex-shrink:0;min-width:148px;
+    padding:4px 14px;
+    margin:8px;
+    border:2px solid var(--buttoncolor);
+    border-radius:18px;
+    color:var(--buttoncolor);
+    font-weight:bold;
+    line-height:24px;
+    text-align:center;
+    cursor:pointer;
+    transition:.24s ease;
+    user-select:none
+}
+  .u-tabs [data-tab-switch]:hover{
+    background:var(--color-overlay-text-hovered)
+}
+  .u-tabs [data-tab-switch]:active{
+    background:var(--collectionshover);
+    border-color:var(--buttonhover)
+}
+  .u-tabs [data-tab-switch].active{
+    background:var(--collectionshover);
+    border-color:var(--buttonhover);
+    color:var(--buttonhover);
+    cursor:default
+}
+  .u-tabs [data-tab]{
+    padding:12px 8px;
+    overflow:hidden
+}
+  .u-tabs.--ripple [data-tab-switch]{
+    position:relative;overflow:hidden;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+  .u-tabs.--ripple [data-tab-switch]::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:72%;
+    padding-top:72%;
+    background:inherit;
+    border-radius:50%;
+    opacity:0;
+    transform:translate3d(-50%, -50%, 0);
+    pointer-events:none
+}
+  .u-tabs.--ripple [data-tab-switch]:not(.active):hover::after{
+    animation:1s switch-focus--vertical ease infinite
+}
+  .u-tabs.--ripple [data-tab-switch].active::after{
+    animation:switch-tap--vertical 0.24s cubic-bezier(0.55, 0.06, 0.68, 0.19)
+}
+  .u-tabs.--centered [data-tab-switch]:first-child{
+    margin-left:auto
+}
+  .u-tabs.--centered [data-tab-switch]:last-child{
+    margin-right:auto
+}
+  .u-tabs.--anorva [data-tab-switch]{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    min-width:96px;
+    padding:4px;
+    margin:4px 0;
+    background:transparent;border:0;font-size:.875em
+}
+  .u-tabs.--anorva [data-tab-switch]::before{
+    display:block;
+    margin:4px auto;
+    transition:transform .2s ease-in-out
+}
+  .u-tabs.--anorva [data-tab-switch]:hover::before,.u-tabs.--anorva [data-tab-switch].active::before{
+    transform:translateY(-4px)
+}
+  .u-tabs.--anorva [data-tab-switch]::after{
+    background:var(--collectionshover)
+}
+  @keyframes switch-focus--vertical{0%,100%{
+    opacity:.8;transform:translate3d(-50%, -50%, 0)
+    }
+    50%{
+      opacity:.8;transform:translate3d(-50%, -50%, 0) scale(0.95)
+    }
+}
+  @keyframes switch-tap--vertical{
+    0%{
+      opacity:.8
+    }
+    100%{
+      opacity:0;
+      transform:translate3d(-50%, -50%, 0) scale(2.5)
+    }
+}
