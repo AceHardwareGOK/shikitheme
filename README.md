@@ -16,22 +16,22 @@
 [/div]
 ```
 Дополнительные классы для u-tabs:
-Класс --ripple добавляет эффект наведения на вкладку.
-Класс --centered располагает горизонтальные вкладки по центру.
+Класс ```--ripple``` добавляет эффект наведения на вкладку.
+Класс ```--centered``` располагает горизонтальные вкладки по центру.
 
-Виды u-tabs:
-Класс --vertical делает вкладки вертикальными при @media (min-width: 960px).
-(класс --right перемещает боковые вкладки вправо)
-Класс --anorva делает вкладки как у @anorva. :advise:
+Виды ```u-tabs```:
+Класс ```--vertical``` делает вкладки вертикальными при ```@media (min-width: 960px)```.
+(класс ```--right``` перемещает боковые вкладки вправо)
+Класс ```--anorva``` делает другой вид вкладок.
 
 P.S. Классы указываются так:
-[div=u-tabs --ripple --centered --vertical to-process data-dynamic=tabs]
-(после u-tabs, через пробел, без точек)
+```[div=u-tabs --ripple --centered --vertical to-process data-dynamic=tabs]```
+(после ```u-tabs```, через пробел, без точек)
 
 Добавить иконку к кнопке или вкладке достаточно просто:
 
 Иконка в обычной кнопке
-[div=b-button data-icon=monetization_on]Текст кнопки[/div]
+```[div=b-button data-icon=monetization_on]Текст кнопки[/div]```
 
 Иконка в кнопке переключения вкладок
-[div data-tab-switch data-icon=palette]Текст вкладки[/div]
+```[div data-tab-switch data-icon=palette]Текст вкладки[/div]```
