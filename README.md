@@ -103,6 +103,6 @@ P.S. Классы указываются так:
 ```scss
 [div data-tab-switch data-icon=palette]Текст вкладки[/div]
 ```
-Возможные значения: <https://material.io>
+Возможные значения: [material.io](https://material.io/resources/icons/?style=baseline)
 ***
 [Очистка кеша на шикимори (если изменения не применяются)](https://shikimori.one/tests/reset_styles_cache?url=)
