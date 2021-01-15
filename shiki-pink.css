@@ -1607,3 +1607,5 @@ h3 {
 .bar.vertical {
     border-bottom: 2px solid var(--fontcolor);
 }
+/*фиксированный размер обложек*/
+@import url(https://css-club.web.app/css/fixed_cover.min.css);
