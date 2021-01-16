@@ -84,7 +84,6 @@
 Виды ```u-tabs```:
 Класс ```--vertical``` делает вкладки вертикальными при ```@media (min-width: 960px)```.
 (класс ```--right``` перемещает боковые вкладки вправо)
-Класс ```--anorva``` делает другой вид вкладок.
 
 P.S. Классы указываются так:
 ```scss
@@ -103,6 +102,6 @@ P.S. Классы указываются так:
 ```scss
 [div data-tab-switch data-icon=palette]Текст вкладки[/div]
 ```
-Возможные значения: [material.io](https://material.io/resources/icons/?style=baseline)
+Список иконок: [material.io](https://material.io/resources/icons/?style=baseline)
 ***
 [Очистка кеша на шикимори (если изменения не применяются)](https://shikimori.one/tests/reset_styles_cache?url=)
