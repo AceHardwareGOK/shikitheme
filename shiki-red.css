@@ -1813,3 +1813,25 @@ header.head .notice {
       transform:translate3d(-50%, -50%, 0) scale(2.5)
     }
 }
+/*история на телефоне*/
+@media (max-width: 480px) {
+  .p-profiles .profile-head .c-history {
+    display: block;
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+  .p-profiles .profile-head .c-history .b-block_list {
+    display: flex;
+    margin-top: -.5em;
+    overflow-x: auto;
+  }
+  .p-profiles .profile-head .c-history .entry:nth-child(n) {
+    flex-shrink: 0;
+    min-width: 200px;
+    max-width: 260px;
+    padding: .5em;
+    margin: 0 .5em 0 0;
+    border: 0;
+  }
+}
