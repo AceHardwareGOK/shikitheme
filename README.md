@@ -58,6 +58,8 @@
   --user-cover: url(https://64.media.tumblr.com/3211b73c9b32b062261d164039e9fcf5/1c1af52e6a2b68f3-b9/s1280x1920/54dfc22c11b43f12d04168433f3032a5cbe1dbf4.png);
   /* Фон сайта */
   --user-background: url(https://i.imgur.com/bz26Puf.png);
+  /*цвет обводки*/
+  --bordercolor: var(--fontcolor);
 }
 ```
 Каждая строчка подписана поэтому сложностей возникнуть не должно. 
