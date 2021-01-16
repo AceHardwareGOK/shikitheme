@@ -23,11 +23,13 @@
   --backgenre: #fff;
   /*цвет текста в поле поиска*/
   --sfontcolor: grey;
+  /*основной цвет кнопок*/
+  --buttonmain: 246, 114, 223;
   /*цвет кнопок*/
-  --buttoncolor: #F0ADF0;
+  --buttoncolor: rgba(var(--buttonmain),0.5);
   /*цвет кнопок при наведении*/
-  --buttonhover: #F672DF;
-  /*основной цвет графиков (вписывать только цифры без скобок), остальные сами подберутся*/
+  --buttonhover: var(--fontcolor);
+  /*основной цвет графиков (вписывать только цифры без скобок),         остальные сами подберутся*/
   --graphmain: 217, 64, 134;
   /*цвет самого тёмного графика*/
   --graph0: rgb(var(--graphmain));
@@ -47,10 +49,12 @@
   --graph3hover: var(--graph0);
   /*цвет при наведении на кнопки вкладок*/
   --color-overlay-text-hovered: rgba(33, 33, 33, 0.04);
-  /* Обложка профиля */
+  /*Обложка профиля*/
   --user-cover: url(https://64.media.tumblr.com/3211b73c9b32b062261d164039e9fcf5/1c1af52e6a2b68f3-b9/s1280x1920/54dfc22c11b43f12d04168433f3032a5cbe1dbf4.png);
   /* Фон сайта */
   --user-background: url(https://i.imgur.com/bz26Puf.png);
+  /*цвет обводки*/
+  --bordercolor: var(--fontcolor);
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -627,6 +631,12 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-radius: 7px;
     text-align:center;
 }
+/*обводка элементов*/
+.headline, .subheadline,
+.midheadline:not(.magenta):not(.orange):not(.blue):not(.red):not(.green):not(.yellow):not(.purple),.b-catalog_entry .cover .image-decor img, .p-profiles .profile-head .c-history .entry img, .b-db_entry-variant-list_item .image img, .b-menu_logo img, .b-topic>.inner header img, .b-db_entry>.c-image img, .b-topic.b-news_wall-topic.b-news-topic>.inner footer .b-shiki_swiper, .p-dashboards-show .v2 .generated-news-line .poster img,.p-dashboards-show .v2 .my-list{
+    border: solid var(--bordercolor);
+    border-width: 2px;
+}
 .p-dashboards-show .v2 .subheadline.orange a,
 .p-dashboards-show .v2 .headline.orange a{
     color: inherit;
@@ -1045,38 +1055,33 @@ select{
 /*кнопки*/
 .b-button,.b-form input[type=submit],.b-poll .poll-actions .vote, .b-poll .poll-actions .abstain {
     background-color: var(--buttoncolor);
-    border-color: transparent;
     color: var(--backgenre);
     border-radius:15px;
     padding: 4px 10px;
 }
+.b-button,.b-form input[type=submit],.b-poll .poll-actions .vote, .b-poll .poll-actions .abstain,.b-link_button.dark,.b-link_button,.b-link_button.dark-2{
+    border: solid var(--bordercolor) 2px;
+}
 .b-link_button.dark,.b-link_button{
     border-radius: 8px;
-    border: none;
 }
-.b-link_button.dark-2 {
+.b-link_button.dark-2,.b-link_button.dark,.b-link_button {
     background-color: var(--buttoncolor);
-    border-color: var(--buttoncolor);
 }
-.b-link_button.dark {
-    background-color: var(--buttoncolor);
-    border-color: var(--buttoncolor);
-}
-.b-link_button {
-    background-color: var(--buttoncolor);
-    color: #5e676f;
-}
-/*при наводке на серые кнопки на главной странице*/
+/*при наводке на кнопки на главной странице*/
 .b-link_button.dark-2:hover{
    background-color: var(--buttonhover);
+   border-color: var(--collectionshover);
 }
 .b-button:active,.b-link_button.dark:active,.b-link_button.dark:hover,.b-link_button:hover,.b-link_button:active,.b-poll .poll-actions .vote:hover, .b-poll .poll-actions .abstain:hover{
     background-color:var(--buttonhover);
     color:var(--backgenre) !important;
+    border-color: var(--collectionshover);
 }
 .b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover{
     background-color:var(--buttonhover);
     color:var(--backgenre) !important;
+    border-color: var(--collectionshover);
 }
 /*иконки*/
 .buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
@@ -1150,7 +1155,7 @@ select{
     background: var(--collectionshover);
     color: var(--fontcolor);
     border-radius: 7px;
-    border: 1px solid var(--fontcolor);
+    border: 1px solid var(--bordercolor);
 }
 .l-page .menu-toggler .toggler:after{
     color: var(--fontcolor);
@@ -1196,7 +1201,7 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
 }
 /*всплывашки при наводке на карточки или ссылки*/
 .tooltip-inner{
-    border: 3px solid var(--fontcolor);
+    border: 3px solid var(--bordercolor);
     border-radius:5px;
     box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
 }
@@ -1211,7 +1216,7 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
     -moz-osx-font-smoothing: grayscale;
     position: relative;
     font-size: 66px;
-    color: var(--fontcolor);
+    color: var(--bordercolor);
     right: 0px;
     top: 3px;
 }
@@ -1567,7 +1572,6 @@ h3 {
 /*цвет истории на главном экране*/
 .p-dashboards-show .v2 .my-list {
     background: var(--collectionshover);
-    border: 1px solid var(--fontcolor);
     padding: 5px 10px 8px;
     border-radius: 7px;
 }
@@ -1615,7 +1619,24 @@ h3 {
     border-bottom: 2px solid var(--fontcolor);
 }
 /*фиксированный размер обложек*/
-@import url(https://css-club.web.app/css/fixed_cover.min.css);
+.b-catalog_entry .cover .image-cutter{
+    max-width:none!important;
+    max-height:none!important
+}
+    .b-catalog_entry .cover .image-cutter::before{
+    content:'';
+    display:block;
+    padding-bottom:155.5555%
+}
+    .b-catalog_entry .cover .image-cutter img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top
+}
 /*Вкладки*/
 [data-icon]::before{
     display:block;
@@ -1644,7 +1665,7 @@ h3 {
     margin-right:8px;
     margin-left:-4px;
     background-size:cover;
-     background-position:center;
+    background-position:center;
     overflow:hidden
 }
 @media (min-width: 960px){
@@ -1667,18 +1688,18 @@ h3 {
     border-radius:0;
     text-align:left
   }
-  .u-tabs.--vertical [data-tab]{
+    .u-tabs.--vertical [data-tab]{
     flex-grow:1;
     padding:18px 24px
   }
 }@media (min-width: 960px){
-  .u-tabs.--vertical.--right>div:not([data-tab]){
+   .u-tabs.--vertical.--right>div:not([data-tab]){
     order:1;
     border-right:0;
     border-left:1px solid var(--buttoncolor)
   }
 }
-  .u-tabs>div:not([data-tab]){
+    .u-tabs>div:not([data-tab]){
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
@@ -1744,27 +1765,6 @@ h3 {
 }
   .u-tabs.--centered [data-tab-switch]:last-child{
     margin-right:auto
-}
-  .u-tabs.--anorva [data-tab-switch]{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:flex-end;
-    min-width:96px;
-    padding:4px;
-    margin:4px 0;
-    background:transparent;border:0;font-size:.875em
-}
-  .u-tabs.--anorva [data-tab-switch]::before{
-    display:block;
-    margin:4px auto;
-    transition:transform .2s ease-in-out
-}
-  .u-tabs.--anorva [data-tab-switch]:hover::before,.u-tabs.--anorva [data-tab-switch].active::before{
-    transform:translateY(-4px)
-}
-  .u-tabs.--anorva [data-tab-switch]::after{
-    background:var(--collectionshover)
 }
   @keyframes switch-focus--vertical{0%,100%{
     opacity:.8;transform:translate3d(-50%, -50%, 0)
