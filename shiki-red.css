@@ -54,7 +54,7 @@
   /* Фон сайта */
   --user-background: url(https://i.imgur.com/bz26Puf.png);
   /*цвет обводки*/
-  --bordercolor: none; 
+  --bordercolor: none;
 }
 @font-face {
   font-family: 'FontAwesome';
