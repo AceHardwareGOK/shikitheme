@@ -71,8 +71,7 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype"), 
-       url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+  src: url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNZ.ttf) format("truetype"), url(https://fonts.gstatic.com/s/materialicons/v53/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
 } 
 /*проценты франшиз*/
 .l-page { outline: 20px solid rgba(255, 255, 255, 0.3); margin-bottom: 20px; }
@@ -1766,6 +1765,27 @@ h3 {
 }
   .u-tabs.--centered [data-tab-switch]:last-child{
     margin-right:auto
+}
+  .u-tabs.--anorva [data-tab-switch]{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    min-width:96px;
+    padding:4px;
+    margin:4px 0;
+    background:transparent;border:0;font-size:.875em
+}
+  .u-tabs.--anorva [data-tab-switch]::before{
+    display:block;
+    margin:4px auto;
+    transition:transform .2s ease-in-out
+}
+  .u-tabs.--anorva [data-tab-switch]:hover::before,.u-tabs.--anorva [data-tab-switch].active::before{
+    transform:translateY(-4px)
+}
+  .u-tabs.--anorva [data-tab-switch]::after{
+    background:var(--collectionshover)
 }
   @keyframes switch-focus--vertical{0%,100%{
     opacity:.8;transform:translate3d(-50%, -50%, 0)
