@@ -1908,10 +1908,6 @@ header.head .notice {
     bottom: 19%;
     border-radius: 4px;
 }
-.rate_module>.c-column>.d-cutted_covers~.text.twolined{
-	top:62.8%;
-	bottom:22.3%
-}
 .rate_module>.c-column>.text.active,.rate_module>.c-column:hover>.text{
 	top:0!important;
 	background: var(--collectionshover);
