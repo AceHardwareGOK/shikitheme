@@ -1861,20 +1861,21 @@ h3 {
 .rate_module>.c-column>.text{
 	position:absolute;
 	right:0;
-	top:80%;
+	top:100%;
 	bottom:0;
 	left:0;
 	padding:.5em;
-	background:rgba(0,0,0,.7);
+	background: rgba(var(--buttonmain), 0.8);
 	font-size:13px;
 	line-height:1.3;
 	overflow:hidden;
 	transition:.2s ease;
-	z-index:9
+	z-index: 9;
 	}
-.rate_module>.c-column>.d-cutted_covers~.text{
-	top:68%;
-    bottom:15.1%
+.rate_module>.c-column>.d-cutted_covers~.text {
+    top: 65%;
+    bottom: 19%;
+    border-radius: 4px;
 }
 .rate_module>.c-column>.d-cutted_covers~.text.twolined{
 	top:62.8%;
@@ -1882,16 +1883,16 @@ h3 {
 }
 .rate_module>.c-column>.text.active,.rate_module>.c-column:hover>.text{
 	top:0!important;
-	background:rgba(0,0,0,.9);
+	background: var(--collectionshover);
 	overflow:auto
 }.rate_module>.c-column>.text.active~strong,.rate_module>.c-column:hover>.text~strong{
 	opacity:0
 }
 .rate_module>.c-column>.text::-webkit-scrollbar{
-	width:6px
+	width:5px;
 }
 .rate_module>.c-column>.text::-webkit-scrollbar-thumb{
-	background-color:var(--collectionshover)
+	background-color: var(--fontcolor);
 }
 .rate_module>.c-column .b-poster,.rate_module>.c-column .b-image{
 	vertical-align:top;
