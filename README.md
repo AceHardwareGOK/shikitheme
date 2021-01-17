@@ -67,7 +67,7 @@
 Каждая строчка подписана поэтому сложностей возникнуть не должно. 
 Фон сайта и шапка профиля меняются там же.
 ***
-Чтобы добавить вкладки в поле **"Обо мне"**, нужно вставить этот код:
+### Вкладки:
 
 ```scss
 [div=u-tabs to-process data-dynamic=tabs]
@@ -108,5 +108,34 @@ P.S. Классы указываются так:
 [div data-tab-switch data-icon=palette]Текст вкладки[/div]
 ```
 Список иконок: [material.io](https://material.io/resources/icons/?style=baseline)
+***
+### Постеры:
+``` 
+[div=rate_module cc-6]
+[div=c-column][animes ids=2966 cover_notice=studio][b]93/100[/b][/div]
+[div=c-column][mangas ids=36131][b]86/100[/b][/div]
+[div=c-column][mangas ids=90125][b]91/100[/b][/div]
+[div=c-column][mangas ids=9115][b]100/100[/b][/div]
+[div=c-column][people ids=79][b]Ками-сама[/b][/div]
+[div=c-column][characters ids=7373][b]Богиня ❤[/b][/div]
+[/div]
+```
+Количество колонок указывается в контейнере ```rate_module```. Поддерживаются колонки от 6 (```cc-6```) до 9 (```cc-9```).
+
+Чтобы добавить новый постер, необходимо внутрь контейнера ```rate_module``` добавить новую строчку с кодом:
+```[div=c-column][mangas ids=9115][b]100/100[/b][/div]```
+где:
+* ```[div=c-column][/div]``` – обязательный контейнер, в котором расположены постер и надпись.
+* ```[mangas ids=9115]``` – код конкретного постера. Указывать можно только один id!
+* ```[b]100/100[/b```] – произвольная надпись.
+
+Также можно добавить блок текста, почти как в коллекциях:
+
+```[div=c-column][mangas ids=9115][div=text]Произвольный текст[/div][b]100/100[/b][/div]```
+
+А класс ```user-defined``` зафиксирует при клике текст в развернутом виде:
+
+```[div=c-column][mangas ids=9115][div=text user-defined]Произвольный текст[/div][b]100/100[/b][/div]```
+
 ***
 [Очистка кеша на шикимори (если изменения не применяются)](https://shikimori.one/tests/reset_styles_cache?url=)
