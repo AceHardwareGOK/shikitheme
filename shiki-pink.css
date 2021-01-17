@@ -906,6 +906,18 @@ div.history .b-block_list li .tooltip-inner a:active,
     border-bottom: none;
     background-color:#f9e5e5;
 }
+.b-spoiler_block>div {
+    background-color: var(--collectionshover);
+    border-left: 4px solid var(--fontcolor);
+}
+.b-spoiler_block>span {
+    background-color: var(--collectionshover);
+    color: var(--fontcolor);
+}
+.b-spoiler_block>span:hover {
+    background-color: var(--buttonhover);
+    color: var(--collectionshover);
+}
 .b-spoiler .content .before:before {
     content: ' ';
 }
