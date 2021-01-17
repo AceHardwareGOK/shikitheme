@@ -1096,7 +1096,7 @@ select{
     background-color: var(--buttoncolor);
     color: #5e676f;
 }
-/*при наводке на серые кнопки на главной странице*/
+/*при наводке на кнопки*/
 .b-link_button.dark-2:hover{
    background-color: var(--buttonhover);
 }
@@ -1107,6 +1107,10 @@ select{
 .b-form input[type=submit]:active,.b-button:hover,.b-form input[type=submit]:hover{
     background-color:var(--buttonhover);
     color:var(--backgenre) !important;
+}
+.p-animes-show .other-names:hover, .p-mangas-show .other-names:hover, .p-ranobe-show .other-names:hover, .b-comments .comments-loader:hover, .b-comments .comments-hider:hover, .b-comments .comments-expander:hover, .b-forum .faye-loader:hover, .collapsed, .collapsed + .spoiler .hide-expanded:hover, .b-comments .faye-loader:hover {
+    background: var(--collectionshover);
+    border-color: var(--fontcolor);
 }
 /*иконки*/
 .buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
