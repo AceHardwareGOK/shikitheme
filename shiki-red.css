@@ -1006,11 +1006,11 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 .b-quote .b-quote,
 .b-quote .b-quote .b-quote,
 .b-quote .b-quote .b-quote .b-quote {
-    border-left: 5px solid #70aade;
+    border-left: 5px solid var(--fontcolor);
     border-right: 0 solid transparent;
-    border-bottom: 0 solid #70aade;
-    border-top: 0 solid #70aade;
-    background: rgba(23, 96, 147, 0.06);
+    border-bottom: 0 solid var(--collectionshover);
+    border-top: 0 solid var(--collectionshover);
+    background: var(--collectionshover);
 }
 .b-quote .quoteable:before {
     content: '\\_f10d';
