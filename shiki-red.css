@@ -1904,9 +1904,13 @@ header.head .notice {
 	z-index: 9;
 	}
 .rate_module>.c-column>.d-cutted_covers~.text {
-    top: 67%;
-    bottom: 13%;
+    top: 71%;
+    bottom: 11%;
     border-radius: 4px;
+}
+.rate_module>.c-column>.d-cutted_covers~.text.twolined{
+    top:65%;
+    bottom:19%
 }
 .rate_module>.c-column>.text.active,.rate_module>.c-column:hover>.text{
 	top:0!important;
