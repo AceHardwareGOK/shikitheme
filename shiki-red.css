@@ -55,6 +55,8 @@
   --user-background: url(https://i.imgur.com/bz26Puf.png);
   /*цвет обводки*/
   --bordercolor: none;
+  /*подпись внизу*/
+  --text: 'Пусть у каждого прочитавшего родится бабушка';
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -1564,7 +1566,7 @@ h3 {
 }
 /*подпись внизу*/
 .l-footer .links:before {
-  content: 'Пусть у каждого прочитавшего родится бабушка';
+  content: var(--text);
   position: absolute;
   left: 16px;
 }
