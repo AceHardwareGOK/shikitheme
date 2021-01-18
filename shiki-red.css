@@ -1966,3 +1966,9 @@ header.head .notice {
   border-radius: 10px;
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
 }
+/*цвет пунктира между сообщениями*/
+.b-message {
+    padding-top: 5px;
+    border-top: 1px dashed var(--fontcolor);
+    margin-bottom: 15px;
+}
