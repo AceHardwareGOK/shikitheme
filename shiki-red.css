@@ -1269,8 +1269,14 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
 .b-stats_bar.lifetime .bar .first {
     background: var(--fontcolor);
 }
-.p-profiles-show .lifetime .cuts .cut {
-    visibility:hidden;
+.p-profiles-show .b-stats_bar.lifetime .cuts .cut {
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 0 0 0 -6px;
+    background: transparent;
 }
 .p-profiles-show .lifetime .times .time.checked:before {
     display:none;
