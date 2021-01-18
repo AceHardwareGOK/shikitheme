@@ -1267,6 +1267,11 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
 .p-profiles-show .lifetime .times .time.checked {
     font-weight: bold;
 }
+.p-profiles-show .lifetime .bar {
+    height: .5rem;
+    line-height: 5px;
+    border-radius: 5px;
+}
 /*активность*/
 .p-profiles-show .profile-content .graph {
     height: 132px;
