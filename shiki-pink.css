@@ -1346,7 +1346,7 @@ div#rates_statuses_stats.bar.simple.horizontal div.bar.s0.min{
 /*развернуть*/
 .b-lang_trigger,.b-height_shortener .expand span,.b-edit_styles .edit_style .style_css .editor-expand, .b-edit_styles .edit_style .style_css .editor-collapse, .b-edit_styles .new_style .style_css .editor-expand, .b-edit_styles .new_style .style_css .editor-collapse {
     padding: 0 3px;
-    background: #f5f5f5;
+    background: var(--collectionshover);
     border-radius: 5px;
 }
 .b-lang_trigger span {
