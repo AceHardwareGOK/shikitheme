@@ -1666,6 +1666,28 @@ h3 {
     object-fit:cover;
     object-position:center top
 }
+.p-profiles-favorites .cc-favourites .b-catalog_entry:hover {
+    transform: scale(1.2);
+    padding-left: 2px;
+    padding-right: 5px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+    z-index: 0;
+    background: white;
+}
+.p-profiles-show .cc-favourites .c-column:hover {
+    transform: scale(1.4);
+    padding-left: 2px;
+    padding-right: 5px;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+    z-index: 0;
+    background: white;
+}
 /*Вкладки*/
 [data-icon]::before{
     display:block;
