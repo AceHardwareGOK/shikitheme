@@ -1008,7 +1008,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 }
 /* при наводке звезды */
 .b-rate .stars.hover {
-    color: #b78bc7;
+    color: var(--graph2);
     transition:all 0.3s ease;
 }
 /*цвет пустой звезды заполненного рейтинга при наводке (откат)*/
