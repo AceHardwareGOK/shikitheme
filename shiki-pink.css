@@ -1013,7 +1013,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 .b-quote,
 .b-quote .b-quote,
 .b-quote .b-quote .b-quote,
-.b-quote .b-quote .b-quote .b-quote {
+.b-quote .b-quote .b-quote .b-quote, .b-quote-v2 {
     border-left: 5px solid var(--fontcolor);
     border-right: 0 solid transparent;
     border-bottom: 0 solid var(--collectionshover);
