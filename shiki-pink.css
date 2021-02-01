@@ -1502,9 +1502,13 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 .b-add_to_list.watching .trigger,
 .b-add_to_list.watching .option,
 .b-add_to_list.rewatching .trigger,
-.b-add_to_list.rewatching .option{
+.b-add_to_list.rewatching .option,
+.b-add_to_list .plus{
     background: #daecff;
     border-color: #c5def9;
+    color: #3b75a0;
+}
+.b-add_to_list .trigger-arrow:hover:before{
     color: #3b75a0;
 }
 .b-add_to_list.planned .trigger:hover,
