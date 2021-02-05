@@ -1967,3 +1967,16 @@ h3 {
     border-top: 1px dashed var(--fontcolor);
     margin-bottom: 15px;
 }
+/*скрытие запятых*/
+.p-profiles .profile-head .c-mobile-actions a:after, .p-profiles .profile-head .c-mobile-actions span:after {
+    visibility: hidden;
+}
+/*центровка и анимация действий в профили на мобильном*/
+@media screen and (max-width: 767px) {
+.p-profiles .profile-head .c-mobile-actions {
+    text-align: center;
+  }
+  .p-profiles .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img {
+    border-width: 3px;
+}
+}
