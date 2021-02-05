@@ -1981,3 +1981,8 @@ h3 {
     border-width: 3px;
 }
 }
+@media screen and (max-width: 720px) {
+.b-quote {
+    border-left: 4px solid var(--fontcolor);
+}
+}
