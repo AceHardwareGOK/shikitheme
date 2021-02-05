@@ -1991,6 +1991,7 @@ header.head .notice {
   border: none !important;
   border-radius: 10px;
   box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+  background: var(--collectionshover);
 }
 /*цвет пунктира между сообщениями*/
 .b-message {
