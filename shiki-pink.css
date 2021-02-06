@@ -134,6 +134,7 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
   }
 }
 /*анимация аватарки*/
+@media screen and (min-width: 1025px) {
 .p-profiles .profile-head .c-brief .avatar img, .p-profiles .profile-head .c-brief .avatar .profile-actions {
     animation: fly 3s ease-in-out infinite;
 }
@@ -145,6 +146,7 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
         transform: translateY(12px);
     }
 }
+} 
 /* sticky_menu */
 @media screen and (min-width: 1025px) {
   .l-top_menu-v2 { 
@@ -1987,3 +1989,4 @@ h3 {
     border-left: 4px solid var(--fontcolor);
 }
 }
+
