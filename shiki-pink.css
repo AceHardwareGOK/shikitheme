@@ -1979,7 +1979,7 @@ h3 {
 .p-profiles .profile-head .c-mobile-actions {
     text-align: center;
   }
-/*рамка вокруг аватарки на телефоне*\
+/*рамка вокруг аватарки на телефоне*/
 .p-profiles .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img {
     border-width: 3px;
 }
