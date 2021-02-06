@@ -142,6 +142,7 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
   }
 }
 /*анимация аватарки*/
+@media screen and (min-width: 1025px) {
 .p-profiles .profile-head .c-brief .avatar img, .p-profiles .profile-head .c-brief .avatar .profile-actions {
     animation: fly 3s ease-in-out infinite;
 }
@@ -152,6 +153,7 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
     50% {
         transform: translateY(12px);
     }
+}
 }
 /* sticky_menu */
 @media screen and (min-width: 1025px) {
@@ -2003,9 +2005,21 @@ header.head .notice {
 .p-profiles .profile-head .c-mobile-actions a:after, .p-profiles .profile-head .c-mobile-actions span:after {
     visibility: hidden;
 }
-/*центровка и анимация действий в профили на мобильном*/
+/*центровка действий в профиле на мобильном*/
 @media screen and (max-width: 767px) {
 .p-profiles .profile-head .c-mobile-actions {
     text-align: center;
   }
+}
+/*fix*/
+@media screen and (max-width: 720px) {
+.b-quote {
+    border-left: 4px solid var(--fontcolor);
+}
+}
+/*отображение значка домой на телефоне*/
+@media screen and (max-width: 480px){
+.l-top_menu-v2 .logo-container .glyph {
+    display: block;
+}
 }
