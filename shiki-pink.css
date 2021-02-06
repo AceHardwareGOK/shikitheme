@@ -1995,4 +1995,12 @@ h3 {
 .l-top_menu-v2 .logo-container .glyph {
     display: block;
 }
+.l-top_menu-v2 .logo-container .logo {
+ background-image: url(/assets/layouts/l-top_menu-v2/logo.svg);
+ -webkit-background-size: contain;
+ background-size: contain;
+ background-repeat: no-repeat;
+ height: 19px;
+ width: 151px;
+}
 }
