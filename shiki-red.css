@@ -103,6 +103,12 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
   margin: -43px;
   margin-bottom: 5px;
 }
+@media screen and (max-width: 480px){
+.p-profiles-show .profile-head:before {
+  height: 104px;
+  width: 416px;
+	}
+}
 /*анимация графиков активности*/
 .activity .graph.vertical .line .bar {
   box-sizing: content-box;
