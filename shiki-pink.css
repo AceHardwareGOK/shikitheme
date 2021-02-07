@@ -97,7 +97,8 @@ body { background: url(/assets/background/footer_lodyas.png) repeat; }
 }
 @media screen and (max-width: 480px){
 .p-profiles-show .profile-head:before {
-  height: 105px;
+  height: 104px;
+  width: 416px;
 	}
 }
 /*анимация графиков активности*/
