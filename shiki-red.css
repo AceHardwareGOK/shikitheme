@@ -2047,23 +2047,18 @@ header.head .notice {
 /*модный вид профиля на телефоне*/
 @media screen and (max-width: 767px){
 .p-profiles .profile-head .c-brief .avatar {
-    margin: -15px 0px -100px -31px;
+    margin: -15px 0px -100px -15px;
 }
 .p-profiles .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img {
     border-width: 3px;
     width: 80%;
     height: 80%;
 }
-.p-profiles .profile-head .c-mobile-actions{
-    text-align: center;
-    margin-top: 25px;
-}
 .p-profiles .profile-head .c-brief{
     text-align: end;
 }
-.p-profiles .profile-head .c-brief header h1,
-.p-profiles .profile-head .c-brief header .misc, .p-profiles .profile-head .c-brief header .edit,
-.p-profiles .profile-head .c-brief header .notice{
-    text-align: center;
+.p-profiles .profile-head .c-mobile-actions{
+    text-align: end;
+    margin-top: 25px;
 }
 }
