@@ -2047,7 +2047,7 @@ header.head .notice {
 /*модный вид профиля на телефоне*/
 @media screen and (max-width: 767px){
 .p-profiles .profile-head .c-brief .avatar {
-    margin: -15px 0px -100px -15px;
+    margin: -15px 0px -100px -31px;
 }
 .p-profiles .profile-head .c-brief .avatar img, .p-user_rates-index .l-menu .avatar img {
     border-width: 3px;
