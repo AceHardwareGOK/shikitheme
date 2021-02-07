@@ -1990,6 +1990,12 @@ header.head .notice {
 	vertical-align:top;
     margin:0
 }
+@media screen and (max-width: 480px){
+.rate_module>.c-column>.d-cutted_covers~.text.twolined {
+    top: 62%;
+    bottom: 21%;
+}
+}
 /*анимация истории*/
 .p-profiles .profile-head .c-history .entry:hover, .p-topics .l-menu .reviews .entry:hover, .p-topics .l-menu .clubs .entry:hover {
   transform: scale(1.03);
