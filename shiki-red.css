@@ -2061,4 +2061,9 @@ header.head .notice {
 .p-profiles .profile-head .c-brief{
     text-align: end;
 }
+.p-profiles .profile-head .c-brief header h1,
+.p-profiles .profile-head .c-brief header .misc, .p-profiles .profile-head .c-brief header .edit,
+.p-profiles .profile-head .c-brief header .notice{
+    text-align: center;
+}
 }
