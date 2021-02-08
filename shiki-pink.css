@@ -1964,6 +1964,10 @@ h3 {
     top: 62%;
     bottom: 21%;
 }
+.rate_module>.c-column>.d-cutted_covers~.text.mobile {
+    top: 62%;
+    bottom: 21%;
+}
 }
 /*анимация истории*/
 .p-profiles .profile-head .c-history .entry:hover, .p-topics .l-menu .reviews .entry:hover, .p-topics .l-menu .clubs .entry:hover {
