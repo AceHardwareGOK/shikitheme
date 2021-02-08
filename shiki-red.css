@@ -1991,6 +1991,10 @@ header.head .notice {
     margin:0
 }
 @media screen and (max-width: 480px){
+.rate_module>.c-column>.d-cutted_covers~.text {
+    top: 62%;
+    bottom: 15%;
+}
 .rate_module>.c-column>.d-cutted_covers~.text.twolined {
     top: 62%;
     bottom: 21%;
