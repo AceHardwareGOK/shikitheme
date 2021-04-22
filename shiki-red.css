@@ -1128,13 +1128,12 @@ select{
     color: var(--fontcolor) !important;
 }
 /*цвет иконок редактора текста при наведении*/
-.icon-bold[data-v-39840933]:hover,.icon-italic[data-v-39840933]:hover,.icon-underline[data-v-39840933]:hover,.icon-strike[data-v-39840933]:hover,.icon-spoiler_inline[data-v-39840933]:hover,.icon-code_inline[data-v-39840933]:hover,.icon-link[data-v-39840933]:hover,.icon-smiley[data-v-39840933]:hover,.icon-smiley[data-v-39840933]:hover,.icon-shiki_link[data-v-39840933]:hover,.icon-image[data-v-39840933]:hover,.icon-upload[data-v-39840933]:hover,.icon-blockquote[data-v-39840933]:hover,.icon-spoiler_block[data-v-39840933]:hover,.icon-code_block[data-v-39840933]:hover,.icon-bullet_list[data-v-39840933]:hover,.icon.is-button[data-v-39840933]:hover,.icon[data-v-39840933]:hover,.icon-redo[data-v-39840933]:hover {
-    color:var(--fontcolor) !important;
+.icon[data-v-720d7eca]:not(.is-disabled):hover {
+    color: var(--fontcolor);
 }
 /*цвет активных иконок редактора текста*/
-.icon.is-active[data-v-39840933],.icon.is-active.is-button[data-v-39840933] {
+.icon.is-active[data-v-720d7eca] {
     background: var(--collectionshover);
-    color: #000;
 }
 @media screen and (max-width:720px){
   .buttons .editor-smiley,.buttons .editor-quote,.buttons .editor-link,.buttons .editor-bold,.buttons .editor-italic,
