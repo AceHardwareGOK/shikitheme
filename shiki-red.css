@@ -1709,6 +1709,7 @@ header.head .notice {
     object-fit:cover;
     object-position:center top
 }
+/*анимация избранного*/
 .p-profiles-favorites .cc-favourites .b-catalog_entry:hover {
     transform: scale(1.2);
     padding-left: 5px;
@@ -1720,6 +1721,7 @@ header.head .notice {
     box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
     z-index: 0;
     background: var(--collectionshover);
+    transition: all 85ms ease;
 }
 .p-profiles-show .cc-favourites .c-column:hover {
     transform: scale(1.4);
@@ -1730,6 +1732,7 @@ header.head .notice {
     border-radius: 5px;
     box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
     z-index: 1;
+    transition: all 85ms ease;
 }
 /*Вкладки*/
 [data-icon]::before{
