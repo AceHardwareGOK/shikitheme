@@ -2068,3 +2068,10 @@ h3 {
   border-radius: 7px;
   transition: all 85ms ease;
 }
+/*скрытие подсказки в профиле*/
+#profiles_show .tooltip-inner{
+    display: none;
+}
+#profiles_show .tooltip.minified .tooltip-inner{
+    display: block !important;
+}
