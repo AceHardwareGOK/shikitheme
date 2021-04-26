@@ -2077,6 +2077,20 @@ header.head .notice {
   border-radius: 7px;
   transition: all 85ms ease;
 }
+#achievements_show .b-achievement:hover{
+  transform: none;
+  z-index: 10;
+  box-shadow: none !important;
+  border-radius: 7px;
+  transition: all 85ms ease;
+}
+#achievements_index .b-achievement:hover{
+  transform: none;
+  z-index: 10;
+  box-shadow: none !important;
+  border-radius: 7px;
+  transition: all 85ms ease;
+}
 /*скрытие подсказки в профиле*/
 #profiles_show .tooltip-inner{
     display: none;
