@@ -767,10 +767,12 @@ div.history .b-block_list li .tooltip-inner a:active,
     color:inherit !important;
 }
 /*цвет выпадающих меню при наведении*/
+@media screen {
 .l-top_menu-v2 .submenu > a:hover,.l-top_menu-v2 .menu-dropdown> span a:hover, .l-top_menu-v2 .menu-icon:hover, .l-top_menu-v2 .menu-dropdown.main>span:not(.mobile):hover{
   color: var(--subfonthover) !important;
   transition: background 0.2s ease;
   background-color: var(--subbackhover) !important;
+}
 }
 /*значок турнира и новой почты*/
 .l-top_menu-v2 .menu-icon.contest:after, .l-top_menu-v2 .menu-icon.mail:after,
