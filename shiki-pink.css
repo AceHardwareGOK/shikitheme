@@ -767,7 +767,7 @@ div.history .b-block_list li .tooltip-inner a:active,
     color:inherit !important;
 }
 /*цвет выпадающих меню при наведении*/
-.l-top_menu-v2 .submenu > a:hover,.l-top_menu-v2 .menu-dropdown> span a:hover, .l-top_menu-v2 .menu-icon:hover{
+.l-top_menu-v2 .submenu > a:hover,.l-top_menu-v2 .menu-dropdown> span a:hover, .l-top_menu-v2 .menu-icon:hover, .l-top_menu-v2 .menu-dropdown.main>span:not(.mobile):hover{
   color: var(--subfonthover) !important;
   transition: background 0.2s ease;
   background-color: var(--subbackhover) !important;
