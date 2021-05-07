@@ -2091,3 +2091,105 @@ h3 {
 #profiles_show .tooltip.minified .tooltip-inner{
     display: block !important;
 }
+/*кнопки в списке аниме*/
+.b-options-floated.mobile-desktop a,.b-options-floated.mobile-phone_portrait a,.b-options-floated.mobile-phone a,.b-options-floated.mobile-tablet a{
+  color:var(--fontcolor)
+}
+.b-options-floated.mobile-desktop a:hover,.b-options-floated.mobile-phone_portrait a:hover,.b-options-floated.mobile-phone a:hover,.b-options-floated.mobile-tablet a:hover{
+  color:var(--activefont)
+}
+.b-options-floated.mobile-desktop a:active,.b-options-floated.mobile-phone_portrait a:active,.b-options-floated.mobile-phone a:active,.b-options-floated.mobile-tablet a:active{
+   color:var(--activefont)
+}
+.b-options-floated.mobile-desktop a.selected,.b-options-floated.mobile-phone_portrait a.selected,.b-options-floated.mobile-phone a.selected,.b-options-floated.mobile-tablet a.selected{
+  color:inherit
+}
+.b-options-floated.mobile-desktop a.selected:hover,.b-options-floated.mobile-phone_portrait a.selected:hover,.b-options-floated.mobile-phone a.selected:hover,.b-options-floated.mobile-tablet a.selected:hover{
+  color:var(--activefont)
+}
+@media (min-width: 1312px){
+  .p-user_rates-index .l-content>.mylist{
+    position:fixed;
+    top:240px;
+    right:auto;
+    width:65px;
+    margin:0 0 0 -80px;
+    text-align:left
+  }
+  .p-user_rates-index .l-content>.mylist a{
+    position:relative;
+    display:block;
+    padding:8px;
+    margin:4px 0;
+    background:var(--collectionshover);
+    border-radius:50% 0 0 50%;
+    color:var(--fontcolor);
+    font-size:0;
+    font-weight:normal;
+    line-height:0
+  }
+  .p-user_rates-index .l-content>.mylist a:hover{
+    text-decoration:none
+  }
+  .p-user_rates-index .l-content>.mylist a::before{
+    display:block;
+    width:1em;
+    padding:8px;
+    border-radius:50%;
+    font-family:'Material Icons';
+    font-size:24px;
+    line-height:1;
+    overflow:hidden;
+    letter-spacing:normal;
+    text-transform:none;
+    word-wrap:normal;
+    white-space:nowrap;
+    direction:ltr;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    -moz-osx-font-smoothing:grayscale;
+    font-feature-settings:'liga'
+  }
+  .p-user_rates-index .l-content>.mylist a:hover::before,.p-user_rates-index .l-content>.mylist a.selected::before{
+    background:var(--fontcolor);
+    color:var(--collectionshover)
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='planned']::before{
+    content:'today'
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='watching']::before{
+    content:'play_arrow'
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='rewatching']::before{
+    content:'replay'
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='completed']::before{
+    content:'done'
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='on_hold']::before{
+    content:'inbox'
+  }
+  .p-user_rates-index .l-content>.mylist a[data-id='dropped']::before{
+    content:'delete'
+  }
+  .p-user_rates-index .l-content>.mylist a::after{
+    display:none
+  }
+  .p-user_rates-index .l-content>.mylist a span{
+    position:absolute;
+    top:0;
+    right:0;
+    padding:2px 4px;
+    margin:6px 4px;
+    background:var(--collectionshover);
+    border-radius:2px;
+    color:var(--fontcolor);
+    font-size:14px;
+    font-weight:bold;
+    line-height:.8
+  }
+  .p-user_rates-index .l-content>.mylist a span::before,.p-user_rates-index .l-content>.mylist a span::after{
+    display:none
+  }
+}
+
