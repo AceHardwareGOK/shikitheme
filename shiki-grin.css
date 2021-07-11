@@ -10860,10 +10860,10 @@ body,input,select,button,textarea{
 	transition: all 85ms ease;
 }
 .p-dashboards-show .v2 .my-list .label span {
-    	color: var(--color-text-primary);
+    color: var(--color-text-primary);
 }
 .p-dashboards-show .v2 .db-update .tags {
-    	height: 53px;
+    height: 53px;
 }
 /* Анимация аватарок друзей в профиле */
 .b-user.avatar img, 
@@ -10896,52 +10896,52 @@ body,input,select,button,textarea{
 /* Цвет текстового редактора */
 .ProseMirror {
 	-webkit-font-variant-ligatures: none;
-	background-color: var(--color-surface);
-	border: none;
-	color: var(--color-text-primary);
+    background-color: var(--color-surface);
+    border: none;
+    color: var(--color-text-primary);
 }
 .menubar[data-v-898f1eda] {
-    	background: var(--color-surface);
+    background: var(--color-surface);
 }
 .icon[data-v-dcc6b890]:not(.is-disabled) {
-    	color: var(--color-text-secondary);
+    color: var(--color-text-secondary);
 }
 .icon.is-disabled[data-v-dcc6b890] {
-   	 color: var(--color-text-disabled);
+    color: var(--color-text-disabled);
 }
 /* Сортировка аниме в ачивках */
 #achievements_show .spoiler.target > .cc-8 {
-	display: flex;
-	flex-wrap: wrap;
-	width: 103.5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 103.5%;
 }
 #achievements_show .cc-8 > .c-column {
-	margin-right: 3.5% !important;
+    margin-right: 3.5% !important;
 }
 #achievements_show .b-catalog_entry {
 	order: 9;
 }
 #achievements_show .b-catalog_entry.completed {
-    	order: 1;
+    order: 1;
 }
 #achievements_show .b-catalog_entry.rewatching {
-    	order: 2;
+    order: 2;
 }
 #achievements_show .b-catalog_entry.watching {
-    	order: 3;
+    order: 3;
 }
 #achievements_show .b-catalog_entry.on_hold {
-    	order: 4;
+    order: 4;
 }
 #achievements_show .b-catalog_entry.planned {
-    	order: 5;
+    order: 5;
 }
 #achievements_show .b-catalog_entry.dropped {
-    	order: 6;
+    order: 6;
 }
 /* Скрытие подсказки в избранном */
 #profiles_favorites .tooltip.minified .tooltip-inner{
-    	display: none;
+    display: none;
 }
 /* Порядок списка аниме/манги */
 .b-stats_bar .stat_names .stat_name[data-type="completed"] {
