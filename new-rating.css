@@ -1,0 +1,63 @@
+/* Замена оценок */
+.score-value.score-10::after,
+.score-value.score-9::after,
+.score-value.score-8::after,
+.score-value.score-7::after,
+.score-value.score-6::after,
+.score-value.score-5::after,
+.score-value.score-4::after,
+.score-value.score-3::after,
+.score-value.score-2::after,
+.score-value.score-1::after {
+	font-size: 0.4em;
+    text-align: center;
+    display: block;
+    margin-top: -5em;
+}
+@media (max-width: 760px){
+	.score-value.score-10::after, 
+	.score-value.score-9::after, 
+	.score-value.score-8::after, 
+	.score-value.score-7::after, 
+	.score-value.score-6::after, 
+	.score-value.score-5::after, 
+	.score-value.score-4::after, 
+	.score-value.score-3::after, 
+	.score-value.score-2::after, 
+	.score-value.score-1::after {
+		margin-top: -4.3em;
+	}
+}
+.score-value.score-10::after {
+    content: 'пахуча беброчка';
+}
+.score-value.score-9::after {
+    content: 'хуйня їбана';
+}
+.score-value.score-8::after {
+    content: 'параша';
+}
+.score-value.score-7::after {
+    content: 'висер мамонта';
+}
+.score-value.score-6::after {
+    content: 'шлюха';
+}
+.score-value.score-5::after {
+    content: 'поєбота';
+}
+.score-value.score-4::after {
+    content: 'анальне отверстіє';
+}
+.score-value.score-3::after {
+    content: 'хуєпутало';
+}
+.score-value.score-2::after {
+    content: 'макакіус';
+}
+.score-value.score-1::after {
+    content: 'негр йобаний';
+}
+.b-rate .score-notice {
+    display: none;
+}
