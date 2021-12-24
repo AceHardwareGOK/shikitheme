@@ -1,0 +1,14 @@
+/* Скрытие активности на сайте */
+@media screen and (min-width:480px){
+  	.p-profiles .profile-content>.cc-2 .c-left {
+        margin-top: -4rem;
+    }
+    .p-profiles .profile-head .c-info .c-additionals {
+        display: none;
+    }
+}
+@media screen and (max-width:480px){
+    .p-profiles .profile-head .c-info .c-additionals {
+        display: none;
+    }
+}
