@@ -1,0 +1,144 @@
+/* Анимация аватарки */
+@media (min-width: 960px){
+  	@keyframes meme {
+        0% {
+            background-image: url(https://i.imgur.com/fZMgaf4.png);
+        }
+        20% {
+            background-image: url(https://i.imgur.com/vb3ltan.png);
+        }
+        40% {
+            background-image: url(https://i.imgur.com/B6TZFAA.png);
+        }
+        60% {
+            background-image: url(https://i.imgur.com/3Jm2kQj.png);
+        }
+      	80% {
+          	background-image: url(https://i.imgur.com/a3pRjKZ.png);
+      	}
+      	100% {
+          	background-image: url(https://i.imgur.com/nJfcvzC.png);
+      	}	
+    }
+  	@keyframes meme-text {
+        0% {
+            content: 'С-сэмпай?!';
+          	background-color: #616161;
+        }
+        20% {
+            content: 'Что ты делаешь?';
+          	margin-left: 1rem;
+          	background-color: #616161;
+        }
+        40% {
+            content: 'Прекрати, пожалуйста';
+          	margin-left: 0rem;
+          	background-color: #616161;
+        }
+        60% {
+            content: 'Остановись, иначе я уйду!';
+          	margin-left: -1rem;
+          	background-color: #616161;
+        }
+      	80% {
+          	content: 'Прощай!';
+          	margin-left: 2.5rem;
+          	background-color: #616161;
+      	}
+      	100% {
+          	content: '';
+          	background-color: transparent;
+      	}
+    }
+    .ava,
+  	.sava {
+        position: relative;
+        z-index: 10;
+        pointer-events: none;
+        left: 0.8em;
+        bottom: 91.1em;
+    }
+    .ava::after,
+  	.sava::after {
+        content: '';
+        display: block;
+        pointer-events: auto;
+        width: 160px;
+        height: 160px;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+        border-radius: 50%;
+      	transition: 1s;
+    }
+  	.ava::after {
+      	background-image: url(https://kawai.shikimori.one/system/users/x160/731631.png?1624387900);
+  	}
+  	.sava::after {
+        background-image: url(https://kawai.shikimori.one/system/users/x160/731631.png?1624387900);
+      	transition: 1s;
+    }
+  	.sava:hover::after {
+      	border-radius: 0;
+      	transform: rotate(360deg);
+  	}
+    .ava:hover::before {
+      	content: '';
+        display: block !important;
+        position: absolute;
+        padding: .375rem .75rem;
+        margin: -2.1rem 2rem;
+        background-color: transparent;
+        border-radius: .125rem;
+        color: #eee;
+        font-size: .875rem;
+        line-height: 1.25rem;
+        opacity: .9;
+      	animation: meme-text forwards;
+      	animation-delay: 3s;
+      	animation-timing-function: step-end;
+        animation-iteration-count: 1;
+        animation-duration: 10s;
+  	}
+    .ava:hover::after {
+      	transform: rotate(720deg);
+      	background-image: url(https://i.imgur.com/2vBDZNd.png);
+        animation: meme forwards;
+      	animation-delay: 3s;
+      	animation-timing-function: step-end;
+        animation-iteration-count: 1;
+        animation-duration: 10s;
+    }
+    .p-profiles .profile-head .c-brief .avatar img {
+      	visibility: hidden;
+    }
+  	.u-tabs.--ava [data-tab] {
+      	overflow: visible;
+      	padding: 0;
+  	}
+  	.hid {
+      	margin-bottom: -10em;
+  	}
+}
+@media (max-width: 980px) {
+    .ava, .sava {
+        bottom: 86.8em;
+    }
+}
+@media (min-width: 981px and max-width: 1024px) {
+    .ava, .sava {
+        bottom: 87.7em;
+    }
+}
+.egg {
+    font-size: medium !important;
+    display: flex;
+    justify-content: center;
+  	margin-left: 0 !important;
+}
+@media (max-width: 959px) {
+  	.u-tabs.--ava.--centered,
+  	.egg {
+      	display: none;
+  	}
+}
