@@ -125,7 +125,7 @@
         bottom: 86.8em;
     }
 }
-@media (min-width: 981px and max-width: 1024px) {
+@media (min-width: 981px) and (max-width: 1024px) {
     .ava, .sava {
         bottom: 87.7em;
     }
