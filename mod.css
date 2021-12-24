@@ -42,7 +42,7 @@
 	overflow:hidden;
 	transition:.2s ease;
 	z-index:9;
-	border-radius:3px
+	border-radius:var(--border-rounded)
 }
 .rate_module>.c-column>.d-cutted_covers~.text{
 	top:67%;
@@ -81,7 +81,7 @@
 }
 .rate_module>.c-column>.text::-webkit-scrollbar-thumb{
 	background-color:var(--color-primary,#333);
-	border-radius:3px
+	border-radius:var(--border-rounded)
 }
 .rate_module>.c-column .b-poster,
 .rate_module>.c-column .b-image{
@@ -662,7 +662,7 @@ body::-webkit-scrollbar-thumb {
   	.b-achievement.is-badge:after {
         background: var(--poster-background);
         color: var(--color-text-primary);
-        border-radius: 3px;
+        border-radius: var(--border-rounded);
       	animation: .5s load linear forwards;
     }
 }
