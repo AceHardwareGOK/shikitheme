@@ -1,0 +1,14 @@
+/* Подпись внизу страницы */
+.l-footer::before{
+	content:"Пусть у каждого прочитавшего родится бабушка";
+	display:block;
+	float:left;
+	position:static;
+	bottom:auto;
+	left:auto;
+	width:auto;
+	height:auto;
+	background:none;
+	color:var(--color-text-hint);
+	font-weight:700
+}
