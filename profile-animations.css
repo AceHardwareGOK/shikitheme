@@ -105,7 +105,7 @@ html[data-turbolinks-preview] .l-page {
 }
 #profiles_show .b-achievement.is-badge:hover:before {
     height: 100%;
-    border-radius: 1px;
+    border-radius: var(--border-rounded);
     opacity: 1;
 }
 @media (prefers-color-scheme: light) {
@@ -124,11 +124,10 @@ html[data-turbolinks-preview] .l-page {
     margin: 0 auto;
     padding: 8px;
     background-color: var(--poster-background);
-    border-radius: 1px;
     text-align: center;
     pointer-events: none;
     opacity: 0;
-    line-height: 10px;
+    line-height: 12px;
     transition: 0s, padding 0.2s, opacity 0.42s, filter 0.2s, height 0.2s;
     will-change: transform;
     text-overflow: clip;
