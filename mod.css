@@ -52,20 +52,6 @@
 	top:61%;
 	bottom:22.9%
 }
-@media (max-width: 599px){
-	.rate_module>.c-column>.d-cutted_covers~.text.twolined{
-		top:59%;
-		bottom:23.3%
-	}
-    .rate_module>.c-column>.d-cutted_covers~.text.mobile {
-        top: 59%;
-    	bottom: 23.3%;
-	}
-    .rate_module>.c-column>.d-cutted_covers~.text{
-		top:65%;
-		bottom:15.9%
-	}
-}
 .rate_module>.c-column>.text.active,
 .rate_module>.c-column>.text:hover{
 	top:0!important;
@@ -88,26 +74,70 @@
 	vertical-align:top;
 	margin:0
 }
-@media (max-width: 980px) {
+@media (max-width: 320px) {
+  .rate_module>.c-column>.d-cutted_covers~.text {
+    top: 56%;
+    bottom: 21%;
+  }
+  .rate_module>.c-column>.d-cutted_covers~.text.mobile,
+  .rate_module>.c-column>.d-cutted_covers~.text.twolined{
+    top: 49%;
+    bottom: 30.1%;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .rate_module>.c-column>.d-cutted_covers~.text {
+    top: 62%;
+    bottom: 18.2%;
+  }
+  .rate_module>.c-column>.d-cutted_covers~.text.mobile,
+  .rate_module>.c-column>.d-cutted_covers~.text.twolined{
+    top: 55%;
+    bottom: 26.4%;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .rate_module>.c-column>.d-cutted_covers~.text {
+    top: 66%;
+    bottom: 16.2%;
+  }
+  .rate_module>.c-column>.d-cutted_covers~.text.mobile,
+  .rate_module>.c-column>.d-cutted_covers~.text.twolined{
+    top: 60%;
+    bottom: 23.7%;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .rate_module>.c-column>.d-cutted_covers~.text {
+    top: 61%;
+    bottom: 18.6%;
+  }
+  .rate_module>.c-column>.d-cutted_covers~.text.mobile,
+  .rate_module>.c-column>.d-cutted_covers~.text.twolined{
+    top: 54%;
+    bottom: 26.8%;
+  }
+}
+@media (min-width: 769px) and (max-width: 980px) {
   .rate_module>.c-column>.d-cutted_covers~.text {
     top: 59%;
-    bottom: 19.7%;
+    bottom: 19.5%;
   }
   .rate_module>.c-column>.d-cutted_covers~.text.mobile,
   .rate_module>.c-column>.d-cutted_covers~.text.twolined{
     top: 52%;
-    bottom: 28.7%;
+    bottom: 28.2%;
   }
 }
 @media (min-width: 981px) and (max-width: 1025px) {
   .rate_module>.c-column>.d-cutted_covers~.text {
     top: 60%;
-    bottom: 19.1%;
+    bottom: 18.6%;
   }
   .rate_module>.c-column>.d-cutted_covers~.text.mobile,
   .rate_module>.c-column>.d-cutted_covers~.text.twolined{
     top: 54%;
-    bottom: 27.5%;
+    bottom: 26.9%;
   }
 }
 /* Вкладки */
