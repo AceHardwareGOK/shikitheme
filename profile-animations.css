@@ -92,7 +92,6 @@ html[data-turbolinks-preview] .l-page {
 .b-user.avatar_fixed_margin img:hover, 
 .b-club .logo:hover{
 	box-shadow: 0 0 3px 2px rgba(25, 25, 105, 0.41);
-	transform: scale(1.2);
 }
 /* Анимация ачивок */
 #profiles_show .b-achievement .c-image .inner:hover {
