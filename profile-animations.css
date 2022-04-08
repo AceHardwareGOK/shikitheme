@@ -17,8 +17,8 @@
 }
 /* Анимация обложки при загрузке */
 .p-profiles .profile-head::before {
-  	height: 0px;
-    animation: .32s roll ease-in-out  forwards;
+	height: 0px;
+	animation: .32s roll ease-in-out  forwards;
 }
 @media (min-width: 960px){
     @keyframes roll {
