@@ -113,26 +113,26 @@ html[data-turbolinks-preview] .l-page {
   	}
 }
 #profiles_show .b-achievement.is-badge::before {
-    display: inline-flex;
-    justify-content: space-around;
-    align-items: center;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    margin: 0 auto;
-    padding: 8px;
-    background-color: var(--poster-background);
-    text-align: center;
-    pointer-events: none;
-    opacity: 0;
-    line-height: 12px;
-    transition: 0s, padding 0.2s, opacity 0.42s, filter 0.2s, height 0.2s;
-    will-change: transform;
-    text-overflow: clip;
-    white-space: normal;
-    word-break: break-word;
-  	font-size: 13px;
+    	display: inline-flex;
+    	justify-content: space-around;
+    	align-items: center;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	width: 100%;
+    	margin: 0 auto;
+    	padding: 8px;
+    	background-color: var(--poster-background);
+    	text-align: center;
+    	pointer-events: none;
+    	opacity: 0;
+    	line-height: 12px;
+    	transition: 0s, padding 0.2s, opacity 0.42s, filter 0.2s, height 0.2s;
+    	will-change: transform;
+    	text-overflow: clip;
+    	white-space: normal;
+    	word-break: break-word;
+	font-size: 13px;
 }
 /* Анимация истории */
 .p-profiles .profile-head .c-history .entry,
