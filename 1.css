@@ -1,0 +1,192 @@
+/* Анимация верхнего меню */
+.l-top_menu-v2 .active .submenu,
+.l-top_menu-v2 .global-search .search-results,
+.l-top_menu-v2 .global-search .search-results .inner{
+	animation: .32s menu ease-in-out; 
+}
+.l-top_menu-v2 .active .submenu::-webkit-scrollbar {
+  	width: 0;
+}
+@keyframes menu {
+  	0% {
+      	max-height: 0px;
+  	}
+  	100% {
+      	max-height: calc(100vh - 112px);
+  	}
+}
+/* Анимация обложки при загрузке */
+.p-profiles .profile-head::before {
+	height: 0px;
+	animation: .32s roll ease-in-out  forwards;
+}
+@media (min-width: 960px){
+    @keyframes roll {
+        0% {
+            height: 0px;
+        }
+        100% {
+            height: 424px;
+        }
+    }
+}
+@media (max-width: 960px){
+    @keyframes roll {
+        0% {
+            padding-bottom: 0%;
+        }
+        100% {
+            padding-bottom: 56.25%;
+        }
+    }
+}
+/* Выделение фоток при наведении */
+.b-image img{
+    	border-radius: 0px;
+}
+.b-image:hover {
+    	background: var(--color-text-primary);
+}
+/* Плавная прогрузка профиля и других элементов */
+html[data-turbolinks-preview] .l-page {
+	opacity: 0;
+	animation: none;
+	pointer-events: none;
+}
+.l-page, 
+.tooltip.minified .tooltip-inner, 
+.tooltip-inner {
+	opacity: 0;
+	animation: .32s load linear forwards;
+	pointer-events: none;
+	will-change: pointer-events;
+}
+@keyframes load {
+	0% {
+		opacity: 0;
+		pointer-events: none;
+	}
+	60% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	100% {
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+/* Анимация аватарок друзей в профиле */
+.b-user.avatar img, 
+.b-user.named_avatar img, 
+.b-user.avatar_fixed_margin img, 
+.b-club .logo {
+	box-shadow: 0 0 3px 1px rgba(30, 30, 50, 0.16);
+  	transition: all 100ms ease;
+}
+.p-profiles .profile-head .c-brief .avatar img, 
+.p-user_rates-index .l-menu .avatar img {
+  	box-shadow: 0 0 3px 1px rgba(30, 30, 30, 0.12);
+}
+.b-user.avatar img:hover, 
+.b-user.named_avatar img:hover, 
+.b-user.avatar_fixed_margin img:hover, 
+.b-club .logo:hover{
+	box-shadow: 0 0 3px 2px rgba(25, 25, 105, 0.41);
+}
+/* Анимация ачивок */
+#profiles_show .b-achievement .c-image .inner:hover {
+	transform: scale(1.1);
+    	transition: 0s ease-out, transform .2s ease-out;
+}
+#profiles_show .b-achievement .c-image .inner {
+    	transition: 0s ease-out, transform .2s ease-out;
+    	will-change: transform;
+}
+#profiles_show .b-achievement.is-badge:hover:before {
+    	height: 100%;
+    	border-radius: var(--border-rounded);
+    	opacity: 1;
+}
+@media (prefers-color-scheme: light) {
+  	#profiles_show .b-achievement.is-badge::before {
+      	color: black;
+  	}
+}
+#profiles_show .b-achievement.is-badge::before {
+    	display: inline-flex;
+    	justify-content: space-around;
+    	align-items: center;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	width: 100%;
+    	margin: 0 auto;
+    	padding: 8px;
+    	background-color: var(--poster-background);
+    	text-align: center;
+    	pointer-events: none;
+    	opacity: 0;
+    	line-height: 12px;
+    	transition: 0s, padding 0.2s, opacity 0.42s, filter 0.2s, height 0.2s;
+    	will-change: transform;
+    	text-overflow: clip;
+    	white-space: normal;
+    	word-break: break-word;
+	font-size: 13px;
+}
+/* Анимация истории */
+.p-profiles .profile-head .c-history .entry,
+.p-topics .l-menu .critiques .entry,
+.p-topics .l-menu .clubs .entry:hover {
+  	transition: all 100ms ease;
+}
+#profiles_show .p-profiles .profile-head .c-history .entry:hover,
+#profiles_show .p-topics .l-menu .critiques .entry:hover,
+#profiles_show .p-topics .l-menu .clubs .entry:hover {
+	transform: scale(1.03);
+	padding-right: 8px;
+	text-decoration: none !important;
+	border: none !important;
+	border-radius: 10px;
+	box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+	background: var(--color-background-dialog);
+}
+.p-profiles .profile-head .c-history .entry:hover a {
+    	background-color: transparent;
+}
+@media screen and (max-width:500px){
+	.p-profiles .profile-head .c-history .entry .misc.date {
+		color: var(--color-text-primary) !important;
+	}
+	.p-profiles .profile-head .c-history .entry:hover,
+	.p-topics .l-menu .critiques .entry:hover,
+	.p-topics .l-menu .clubs .entry:hover{
+		background: var(--color-overlay-primary-hovered);
+	}
+}
+@media (max-width: 959px){
+	.p-profiles .profile-head .c-history{
+		background-color:var(--poster-background)
+	}
+	.p-profiles .profile-head .c-history .subheadline a{
+		color:var(--color-text-primary) !important
+	}
+}
+.p-profiles .profile-head .c-history .entry{
+	padding-left: 9px
+}
+.p-profiles .profile-head .c-history .entry::before {
+	right: 0.5rem;
+	left: 0.5rem;
+}
+/* Анимация избранного */
+@media screen and (min-width:480px){
+  	.p-profiles-show .cc-favourites .c-column{
+      	transition: all 100ms ease;
+  	}
+	.p-profiles-show .cc-favourites .c-column:hover {
+		transform: scale(1.1);
+		box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.2) !important;
+		z-index: 1;
+	}
+}
