@@ -136,13 +136,11 @@ html[data-turbolinks-preview] .l-page {
 }
 /* Анимация истории */
 .p-profiles .profile-head .c-history .entry,
-.p-topics .l-menu .critiques .entry,
-.p-topics .l-menu .clubs .entry{
+.p-topics .l-menu .critiques .entry {
   	transition: all 100ms ease;
 }
-#profiles_show .p-profiles .profile-head .c-history .entry:hover,
-#profiles_show .p-topics .l-menu .critiques .entry:hover,
-#profiles_show .p-topics .l-menu .clubs .entry:hover {
+.p-profiles .profile-head .c-history .entry:hover,
+.p-topics .l-menu .critiques .entry:hover {
 	transform: scale(1.03);
 	padding-right: 8px;
 	text-decoration: none !important;
@@ -159,8 +157,7 @@ html[data-turbolinks-preview] .l-page {
 		color: var(--color-text-primary) !important;
 	}
 	.p-profiles .profile-head .c-history .entry:hover,
-.p-topics .l-menu .critiques .entry:hover,
-.p-topics .l-menu .clubs .entry:hover {
+.p-topics .l-menu .critiques .entry:hover {
 		background: var(--color-overlay-primary-hovered);
 	}
 }
