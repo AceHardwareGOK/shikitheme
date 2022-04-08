@@ -140,9 +140,9 @@ html[data-turbolinks-preview] .l-page {
 .p-topics .l-menu .clubs .entry:hover {
   	transition: all 100ms ease;
 }
-#profiles_show .p-profiles .profile-head .c-history .entry:hover,
-#profiles_show .p-topics .l-menu .critiques .entry:hover,
-#profiles_show .p-topics .l-menu .clubs .entry:hover {
+.p-profiles .profile-head .c-history .entry:hover,
+.p-topics .l-menu .critiques .entry:hover,
+.p-topics .l-menu .clubs .entry:hover {
 	transform: scale(1.03);
 	padding-right: 8px;
 	text-decoration: none !important;
