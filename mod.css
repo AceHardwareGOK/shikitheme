@@ -528,14 +528,18 @@
     border: none;
     color: var(--color-text-primary);
 }
-.menubar[data-v-61d07518] {
-    background: var(--color-surface);
+.menubar{
+    background: var(--color-surface) !important;
 }
-.icon[data-v-dcc6b890]:not(.is-disabled) {
-    color: var(--color-text-secondary);
+.menubar .icons,
+.icon:not(.is-disabled){
+    color: var(--color-text-secondary) !important;
 }
-.icon.is-disabled[data-v-dcc6b890] {
-    color: var(--color-text-disabled);
+.icon:not(.is-disabled):hover {
+  color: var(--link-hover-color) !important;
+}
+.icon.is-disabled {
+    color: var(--color-text-disabled) !important;
 }
 /* Сортировка аниме в ачивках */
 #achievements_show .spoiler.target > .cc-8 {
