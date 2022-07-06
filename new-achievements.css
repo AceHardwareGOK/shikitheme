@@ -1,36 +1,44 @@
 @media (min-width: 960px) {
-	.p-profiles-show .achievements > .cc-3 {
+	.p-profiles-show .achievements>.cc-3 {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
 	.p-profiles-show .achievements .cc-achievements {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 8px;
 	}
-	.p-profiles-show .achievements > .cc-3 > .c-column:nth-child(1), .p-profiles-show .achievements > .cc-3 > .c-column:nth-child(2) {
+
+	.p-profiles-show .achievements>.cc-3>.c-column:nth-child(1),
+	.p-profiles-show .achievements>.cc-3>.c-column:nth-child(2) {
 		flex: 1 0 auto;
 		margin: 0;
-	  }
+	}
+
 	.p-profiles-show .achievements .cc-achievements .b-achievement {
-	  width: 100%;
-	  margin: 0;
-	  order: calc(var(--progress) * var(--achievements-sort));
-  	}
-	.p-profiles-show .achievements > .cc-3 > .c-column:nth-child(3) {
-	  width: 100%;
-  	}
+		width: 100%;
+		margin: 0;
+		order: calc(var(--progress) * var(--achievements-sort));
+	}
+
+	.p-profiles-show .achievements>.cc-3>.c-column:nth-child(3) {
+		width: 100%;
+	}
+
 	.p-profiles-show .achievements .cc-franchises {
-	  display: grid;
-	  grid-template-columns: repeat(12, 1fr);
-	  grid-gap: 0 8px;
-  	}
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: 0 8px;
+	}
+
 	.p-profiles-show .achievements .cc-franchises .b-badge {
-	  width: 100%;
-	  margin: 0;
-	  order: calc(var(--progress) * var(--achievements-sort));
-  	}
-	.p-profiles-show .achievements > .cc-3 > .c-column:nth-child(2) {
-	  margin-left: 8px;
-  	}
+		width: 100%;
+		margin: 0;
+		order: calc(var(--progress) * var(--achievements-sort));
+	}
+
+	.p-profiles-show .achievements>.cc-3>.c-column:nth-child(2) {
+		margin-left: 8px;
+	}
 }
