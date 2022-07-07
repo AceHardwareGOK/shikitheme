@@ -755,3 +755,18 @@ body::-webkit-scrollbar-thumb {
 .graph.vertical .line .bar-container .bar {
 	width: 8px
 }
+
+/* FIX */
+@media (max-width: 599px){
+	.b-stats_bar .stat_names .stat_name {
+    		display: none;
+		padding: 0px 10px 0 10px;
+		margin: 2px 0;
+	}
+	.b-stats_bar .stat_names .stat_name a:hover {
+    		background: transparent;
+	}
+}
+.b-stats_bar .stat_names .stat_name a:hover::before {
+	opacity: 0.5;
+}
