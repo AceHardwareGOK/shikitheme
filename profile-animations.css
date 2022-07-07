@@ -179,6 +179,9 @@ html[data-turbolinks-preview] .l-page {
 	right: 0.5rem;
 	left: 0.5rem;
 }
+.p-profiles .profile-head .c-history .entry, .p-profiles .profile-head .c-history .entry:first-child {
+    	padding-right: 8px;
+}
 /* Анимация избранного */
 @media screen and (min-width:480px){
   	.p-profiles-show .cc-favourites .c-column{
