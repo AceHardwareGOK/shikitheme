@@ -639,6 +639,10 @@
 	color: var(--color-text-disabled) !important;
 }
 
+.menu_group .mobile_placeholder:not(.is-disabled) {
+    	color: var(--color-text-secondary) !important;
+}
+
 /* Сортировка аниме в ачивках */
 #achievements_show .spoiler.target>.cc-8 {
 	display: flex;
