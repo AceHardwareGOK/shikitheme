@@ -743,13 +743,6 @@ body::-webkit-scrollbar-thumb {
 	}
 }
 
-/* Обложка на телефоне */
-@media (max-width: 599px) {
-	.p-profiles .profile-head::before {
-		background-image: var(--user-cover-mobile)
-	}
-}
-
 /* Толщина полосок графика */
 .graph.vertical .line .bar-container,
 .graph.vertical .line .bar-container .bar {
