@@ -13,11 +13,11 @@
 .score-value.score-2::after,
 .score-value.score-1::after {
 	font-size: 0.4em;
-    	display: block;
-    	margin-top: -3em;
     	line-height: 1em;
+	position: absolute;
+   	inset: auto 0 1em;
 }
-@media (max-width: 760px){
+/*@media (max-width: 760px){
 	.score-value.score-10::after, 
 	.score-value.score-9::after, 
 	.score-value.score-8::after, 
@@ -30,7 +30,7 @@
 	.score-value.score-1::after {
 		margin-top: -3em;
 	}
-}
+}*/
 .score-value.score-10::after {
     content: 'пахуча беброчка';
 }
