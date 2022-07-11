@@ -107,11 +107,6 @@ html[data-turbolinks-preview] .l-page {
     	border-radius: var(--border-rounded);
     	opacity: 1;
 }
-@media (prefers-color-scheme: light) {
-  	#profiles_show .b-achievement.is-badge::before {
-      	color: black;
-  	}
-}
 #profiles_show .b-achievement.is-badge::before {
     	display: inline-flex;
     	justify-content: space-around;
@@ -123,6 +118,7 @@ html[data-turbolinks-preview] .l-page {
     	margin: 0 auto;
     	padding: 8px;
     	background-color: var(--color-background-translucent);
+	color: var(--color-text-primary);
     	text-align: center;
     	pointer-events: none;
     	opacity: 0;
