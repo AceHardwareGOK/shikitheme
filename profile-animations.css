@@ -130,6 +130,9 @@ html[data-turbolinks-preview] .l-page {
     	word-break: break-word;
 	font-size: 13px;
 }
+.b-achievement.is-badge:after {
+	pointer-events: none !important;
+}
 /* Анимация истории */
 .p-profiles .profile-head .c-history .entry,
 .p-topics .l-menu .critiques .entry,
