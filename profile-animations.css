@@ -165,7 +165,7 @@ html[data-turbolinks-preview] .l-page {
 }
 @media (max-width: 959px){
 	.p-profiles .profile-head .c-history{
-		background-color:var(--poster-background)
+		background-color:var(--color-background-translucent)
 	}
 	.p-profiles .profile-head .c-history .subheadline a{
 		color:var(--color-text-primary) !important
