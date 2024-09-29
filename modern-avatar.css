@@ -53,7 +53,6 @@
     .ava,
   	.sava {
         position: relative;
-        z-index: 10;
         pointer-events: none;
         left: 0.8em;
         bottom: 91.1em;
